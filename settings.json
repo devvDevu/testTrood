@@ -1,0 +1,123 @@
+{
+    "settings": {
+            "___": {
+                "cmd": {
+                    "app": {}
+                },
+                "internal": {
+                    "config": {},
+                    "common": {
+                        "types": {
+                            "error_with_codes": {},
+                            "user_type": [ 
+                                {
+                                    "file_name": "user_message",
+                                    "file_ext": ".go",
+                                    "file_type": "string"
+                                }
+                            ],
+                            "intent_type": [
+                                {
+                                    "file_name": "intent_id",
+                                    "file_ext": ".go",
+                                    "file_type": "int"
+                                },
+                                {
+                                    "file_name": "intent_word",
+                                    "file_ext": ".go",
+                                    "file_type": "string"
+                                },
+                                {
+                                    "file_name": "intent_answer",
+                                    "file_ext": ".go",
+                                    "file_type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "adapter": {
+                        "db_adapter": {},
+                        "lsp_adapter": {},
+                        "kafka_adapter": {}
+                    },
+                    "repository": {
+                        "intent_repository": {},
+                        "lsp_repository": {},
+                        "kafka_repository": {}
+                    },
+                    "service": {
+                        "intent_service": {},
+                        "lsp_service": {},
+                        "kafka_service": {}
+                    },
+                    "usecase": {
+                        "intnet_usecase": {},
+                        "kafka_usecase": {}
+                    }, 
+                    "handler": {
+                        "ask_handler": {}
+                    },
+                    "value_object": {
+                        "intent_vo": [
+                            {
+                                "file_name": "intent_vo",
+                                "file_ext": ".go",
+                                "fields": [
+                                    {
+                                        "name": "user_message",
+                                        "type": "user_type.UserMessage",
+                                        "tag": ""
+                                    },
+                                    {
+                                        "name": "intent_word",
+                                        "type": "intent_type.IntentWord",
+                                        "tag": ""
+                                    },
+                                    {
+                                        "name": "answer",
+                                        "type": "intent_type.IntentAnswer",
+                                        "tag": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "model": {
+                        "intent_model": [
+                            {
+                                "file_name": "intent_model",
+                                "file_ext": ".go",
+                                "fields": [
+                                    {
+                                        "name": "id",
+                                        "type": "intent_type.IntentId",
+                                        "tag": ""
+                                    },
+                                    {
+                                        "name": "intent_word",
+                                        "type": "intent_type.IntentWord",
+                                        "tag": ""
+                                    },
+                                    {
+                                        "name": "answer",
+                                        "type": "intent_type.IntentAnswer",
+                                        "tag": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "data_transfer_object":{
+                        "example_dto": {
+                            "response": {},
+                            "request": {}
+                        },
+                        "result": {}
+                    },
+                    "pkg": {
+                        "env":{}
+                    }
+                }
+            }
+        }
+}
